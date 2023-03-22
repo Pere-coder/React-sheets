@@ -38,12 +38,12 @@ class Fom extends Component {
         <form onSubmit={this.handleSubmit}>
         <div className='App'>
           <label>Username</label>
-          <input tyoe='text' value={this.username} onChange={this.handleUsernameChange}></input>
+          <input class="mt-10 bg-gray-500 " tyoe='text' value={this.username} onChange={this.handleUsernameChange}></input>
         </div>
 
         <div>
             <label>Comments</label>
-            <textarea value={this.comments} onChange={this.handleCommentChange}></textarea>
+            <textarea class= ' mt-10 bg-gray-500' value={this.comments} onChange={this.handleCommentChange}></textarea>
         </div>
 
         <div>
