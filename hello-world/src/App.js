@@ -20,22 +20,32 @@ import Inline from './components/Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css';
 import Fom from './components/Fom';
+import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 function App() {
 
   
 return (  
-    <>
-      <div className="App">
-        <Fom/>
+      <div className='App'>
+        <Table>
+              <Table/>
+        </Table>
       </div>
-    
-    </>
   )
 }
 
 export default App;
-
+{/* <React.Fragment>
+      <h1>
+        <FragmentDemo/>
+      </h1>
+      <p>This describes the FragmentDemo</p>
+    
+    </React.Fragment> */}
+{/* <LifecycleA/> */}
+{/* <Fom/> */}
 {/* <h1 className='error'>Error</h1>
 <h1 className={styles.success }>Success</h1> */}
 {/* <Stylesheet primary={true}/>
