@@ -23,20 +23,23 @@ import Fom from './components/Fom';
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import PlayGround from './components/PlayGround';
 
 function App() {
 
   
 return (  
       <div className='App'>
-        <Table>
-              <Table/>
-        </Table>
+        <PlayGround name = 'bose' />
+
       </div>
   )
 }
 
 export default App;
+{/* <Table>
+              <Table/>
+        </Table> */}
 {/* <React.Fragment>
       <h1>
         <FragmentDemo/>
