@@ -2,27 +2,40 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { ReactDOM } from 'react';
 function W3studio(props) {
-    const [name, setName] = useState("");
+    const[myCar, setMyCar] = useState("Volvo");
 
-    const handleSubmit = (event)=> {
-        event.preventDefault();
-        alert(`The name you entered was: ${name}`)
+    const handleChange = (event) => {
+        setMyCar(event.target.value)
     }
+
     return (
-        <form onSubmit={handleSubmit}>
-        <label>Enter your name:
-          <input type="text" value={name} onChange={(e)=> setName(e.target.value)} />
-        </label>
-        <input type="submit" />
-      </form>
+        <form>
+            <select value={myCar} onChange={handleChange}>
+                <option value="Ford">Ford</option>
+                <option value="Volve">Volvo</option>
+                <option value="Fiat">Fiat</option>
+            </select>
+        </form>
     )
-    
+   
+
 }
-
-
-
-
 export default W3studio
+
+
+// const [textarea, setTextarea] = useState(
+//     "The content of a textarea goes in the value attribute"
+//    );
+
+//    const handleChange = (event) => {
+//         setTextarea(event.target.value)
+//    }
+
+//    return (
+//     <form>
+//       <textarea value={textarea} onChange={handleChange} />
+//     </form>
+//   )
 
 
 //     const [count, setCount] = useState(0);
