@@ -24,19 +24,60 @@ import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import PlayGround from './components/PlayGround';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import ReactDOM from "react-dom/client";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
+import W3studio from './components/W3studio';
+
+
+
 
 function App() {
 
   
-return (  
-      <div className='App'>
-        <PlayGround name = 'bose' />
-
-      </div>
-  )
+return (
+    <div className='App'>
+      <W3studio/>
+    </div>
+)
 }
 
+
+{/* <h1>Who lives in my garage?</h1>
+{cars.map((car)=> <W3studio key={car.id} brand={car.brand}/>)} */}
+  // const cars = [
+  //   {id: 1, brand: 'Ford'},
+  //   {id: 2, brand: 'BMW'},
+  //   {id: 3, brand: 'Audi'}
+  // ];
+  
+//   <BrowserRouter>
+  //   <Routes>
+  //     <Route path='/' element={<Layout/>}>
+  //       <Route index element = {<Home />} />
+  //       <Route path="blogs" element={<Blogs />} />
+  //       <Route path="contact" element={<Contact />} />
+  //       <Route path="*" element={<NoPage />} />
+
+  //     </Route>
+      
+  //   </Routes>
+  //   </BrowserRouter>
+  // )
+
 export default App;
+
+  // <div className='App'>
+      //   <PlayGround name = 'bose' />
+      //   <PlayGround name = 'kkk' />
+      //   <PlayGround name = 'ppp' />
+
+      // </div>
 {/* <Table>
               <Table/>
         </Table> */}
