@@ -33,6 +33,7 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import W3studio from './components/W3studio';
+import Test from './pages/Test';
 
 
 
@@ -42,7 +43,17 @@ function App() {
   
 return (
     <div className='App'>
-      <W3studio/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+            <Route index element = {<Home/>}/>
+            <Route path="blogs" element={<Blogs />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path = "test" element={<Test />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
 )
 }
